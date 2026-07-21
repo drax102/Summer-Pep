@@ -1,8 +1,12 @@
+import math
+
 def area_square(s):
-    return s*s
+    return s * s
 
 def area_rectangle(l, b):
-    return 2*(l+b)
+    # Fixed: Returns l * b instead of the perimeter formula
+    return l * b
 
 def area_circle(r):
-    return 3.14159265359*r*r
+    # Fixed: Uses math.pi instead of a hardcoded number
+    return math.pi * r * r
